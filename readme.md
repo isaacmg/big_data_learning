@@ -4,8 +4,14 @@
 * [Introduction and History](#intro)  
    * [Origins of Big Data](#orgins)
    * [The Birth of Hadoop](#hadoopbirth)
+* [Principals](#principals)
+* [Cluster Computing Systems](#cluster)
+  * [HDFS](#hdfs)
+  * [MapReduce](#MapReduce)
+  * [Spark](#spark)
+  * [Flink](#flink)
 
-
+  
 Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request.
 <a name="intro"/>
 ## Introduction and a brief history
@@ -16,7 +22,9 @@ The term Big Data most likely originated sometime in the 1990s (you can see one 
 <a name="hadoopbirth"/>
 ### The Birth of Hadoop 
 Hadoop originates from the Google File System paper which was published in 2003 and 
-## Principals 
+<a name="principals"/>
+## Principals
+
 ### MapReduce, YARN, HDFS and Hadoop
 
 ### Basic elements of a data pipeline
@@ -61,6 +69,7 @@ Real world examples:
 Hospital Example: 
 1.
 [Monitoring Traffic Data]("https://www.mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-1")
+<a name="cluster" />
 ## Distributed Computing 
 ### Modern HDFS 
 ### MapReduce
