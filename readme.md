@@ -1,7 +1,8 @@
 # Big Data Guide 
 ## Table of Contents  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
+
+* [Introduction and History](#Introduction and a brief history)  
+   *[Origins of Bigdata](#The Origins of Big Data) 
 ...snip...    
 <a name="headers"/>
 
@@ -87,7 +88,7 @@ https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashb
 
 ## Data Science, Data Engineering, Business Intelligence, and Software Engineering 
 [The Rise of the Data Engineer on Medium](https://medium.freecodecamp.com/the-rise-of-the-data-engineer-91be18f1e603#.7v0hp99i0)
-
+[Differences between job positions](https://bigdatauniversity.com/blog/data-scientist-vs-data-engineer/)
 ## Hardware
 Setting up your own small Hadoop cluster 
 http://www.oneillscrossing.com/home-built-hadoop-analytics-cluster/#Hardware_310_per_node
