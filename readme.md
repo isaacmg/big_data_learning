@@ -90,20 +90,25 @@ http://www.slideshare.net/sbaltagi/flink-vs-spark
 ### NoSQL
 #### Graph Databases
 **Neo4j**
-## Messaging/ Real time Streaming Data
+## Messaging/ Real time streaming data
+### Flume 
+### Kafka 
 
-## Deploying, managing, creating Machine learning models 
+## Creating, training, deploying, and managing, machine learning models 
 
 ## Data Visualization 
 http://www.slideshare.net/BenLaird/real-time-data-viz-with-spark-streaming-kafka-and-d3js
 https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashboard/
 
-## Data Science, Data Engineering, Business Intelligence, and Software Engineering 
+## Diffrences between Data Science, Data Engineering, Business Intelligence, and Software Engineering 
 [The Rise of the Data Engineer on Medium](https://medium.freecodecamp.com/the-rise-of-the-data-engineer-91be18f1e603#.7v0hp99i0)
+
 [Differences between job positions](https://bigdatauniversity.com/blog/data-scientist-vs-data-engineer/)
 ## Hardware
-Setting up your own small Hadoop cluster 
-http://www.oneillscrossing.com/home-built-hadoop-analytics-cluster/#Hardware_310_per_node
+### GPUs and Big Data 
+[GPUs and Big Data]("http://www.hpl.hp.com/techreports/2009/HPL-2009-38.pdf")
+### Setting up a Hadoop Cluster
+[Setting up your own small Hadoop cluster] (http://www.oneillscrossing.com/home-built-hadoop-analytics-cluster/#Hardware_310_per_node)
 ## Workflow Software 
 ### Nifi 
 ### Airflow 
@@ -117,7 +122,7 @@ Attention if you install Airflow with pip you will have to find the base directo
 ## Resources 
 ### Conferences
 [Open Data Science]
-[Flink Forward]
+[Flink Forward](http://flink-forward.org)
 [Kafka Summit]
 [Rec Systems]
 [Spark Summit]
