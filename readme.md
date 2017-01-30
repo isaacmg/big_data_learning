@@ -7,24 +7,39 @@ The term Big Data most likely originated sometime in the 1990s (you can see one 
 ### The Birth of Hadoop 
 Hadoop originates from the Google File System paper which was published in 2003 and 
 ## Principals 
+### MapReduce, YARN, HDFS and Hadoop
+
 ### Basic elements of a data pipeline
 Various use cases will differ however, most big data pipelines will have similar common features. For the most part they will follow the following form:   
 1. Data Collection
 2. Ingestion from a data source (this may also been called the extraction phase)
 2. Transformation/Computation
-3. (Not always but most of the time) storage 
+3. (Not always but most of the time) storing data  
 4. Serving the data to the user
-This could involve either providing 
+### Real World Architectures 
+In practice it is usually much more complicated than this. You are often extracting data from multiple sources and combining it into one, you have several machine learning models which you train offline and need deploy etc... 
+[IBM Series on Big Data](http://www.ibm.com/developerworks/library/bd-archpatterns3/index.html?ca=drs-)
+#### Lambda Architecture 
+
 ### Examples: 
-Reccomendation engine: [See a real example here by Comcast here:] https://spark-summit.org/2015-east/wp-content/uploads/2015/03/SSE15-18-Neumann-Alla.pdf  
+**Reccomendation engine**:
+Simple example:   
 1. Users watch various movies and rate them. 
-2. Rating data is stored in HDFS and watch/click data is generated in realtime in log files.
+2. Rating data is stored in a database and watch/click data is generated in realtime in log files.
 3. Data sources are combined and fed into a pretrained reccomendation engine.
 4. Recommendations are stored and pushed back to the user. 
-
+Real examples: 
+[Spotify Movie Reccomendations with Spark](http://www.slideshare.net/MrChrisJohnson/collaborative-filtering-with-spark)
+[Comcast TV recommendations](https://spark-summit.org/2015-east/wp-content/uploads/2015/03/SSE15-18-Neumann-Alla.pdf)
+[Netflix Movie reccomendations with Spark and GraphX](http://www.slideshare.net/SessionsEvents ehtsham-elahi-senior-research-engineer-personalization-science-and-engineering-group-at-netflix-at-mlconf-sea-50115?next_slideshow=1) (mainly machine learning focused, but still interesting)
+[Caserta Movie Reccomendations](http://www.slideshare.net/CasertaConcepts/analytics-week-recommendations-on-spark)
+** Monitoring ** 
+Hospital Example: 
+1.
+[Monitoring Traffic Data]("https://www.mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-1")
 ## Distributed Computing 
-### HDFS 
-
+### Modern HDFS 
+### MapReduce
 ### Spark 
 #### PySpark 
 Find Spark is very useful for finding PySpark on your installation if you run in to problems. You can get it here https://github.com/minrk/findspark.
