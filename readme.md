@@ -1,4 +1,10 @@
 # Big Data Guide 
+## Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+<a name="headers"/>
+
 Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request. 
 ## Introduction and a brief history
 ![big_data](https://upload.wikimedia.org/wikipedia/commons/7/7c/Hilbert_InfoGrowth.png =100x100)
@@ -33,17 +39,17 @@ Simple example:
 3. Data sources are combined and fed into a pretrained reccomendation engine.
 4. Recommendations are stored and pushed back to the user. 
 
-Real examples: 
+Real world examples: 
 
-◦[Spotify Movie Reccomendations with Spark](http://www.slideshare.net/MrChrisJohnson/collaborative-filtering-with-spark)
+◦ [Spotify Movie Reccomendations with Spark](http://www.slideshare.net/MrChrisJohnson/collaborative-filtering-with-spark)
 
-◦[Comcast TV recommendations](https://spark-summit.org/2015-east/wp-content/uploads/2015/03/SSE15-18-Neumann-Alla.pdf)
+◦ [Comcast TV recommendations](https://spark-summit.org/2015-east/wp-content/uploads/2015/03/SSE15-18-Neumann-Alla.pdf)
 
-◦[Netflix Movie reccomendations with Spark and GraphX](http://www.slideshare.net/SessionsEvents ehtsham-elahi-senior-research-engineer-personalization-science-and-engineering-group-at-netflix-at-mlconf-sea-50115?next_slideshow=1) (mainly machine learning focused, but still interesting)
+◦ [Netflix Movie reccomendations with Spark and GraphX](http://www.slideshare.net/SessionsEvents ehtsham-elahi-senior-research-engineer-personalization-science-and-engineering-group-at-netflix-at-mlconf-sea-50115?next_slideshow=1) (mainly machine learning focused, but still interesting)
 
-◦[Caserta Movie Reccomendations](http://www.slideshare.net/CasertaConcepts/analytics-week-recommendations-on-spark)
+◦ [Caserta Movie Reccomendations](http://www.slideshare.net/CasertaConcepts/analytics-week-recommendations-on-spark)
 
-◦[Computering Reccomendations at scale with Flink](http://data-artisans.com/computing-recommendations-at-extreme-scale-with-apache-flink/)
+◦ [Computering Reccomendations at scale with Flink](http://data-artisans.com/computing-recommendations-at-extreme-scale-with-apache-flink/)
 
 
 ** Monitoring ** 
@@ -75,11 +81,13 @@ http://www.slideshare.net/sbaltagi/flink-vs-spark
 
 ## Deploying, managing, creating Machine learning models 
 
-## Data Visiualization 
+## Data Visualization 
 http://www.slideshare.net/BenLaird/real-time-data-viz-with-spark-streaming-kafka-and-d3js
-##
 https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashboard/
-https://kafka-summit.org
+
+## Data Science, Data Engineering, Business Intelligence, and Software Engineering 
+[The Rise of the Data Engineer on Medium](https://medium.freecodecamp.com/the-rise-of-the-data-engineer-91be18f1e603#.7v0hp99i0)
+
 ## Hardware
 Setting up your own small Hadoop cluster 
 http://www.oneillscrossing.com/home-built-hadoop-analytics-cluster/#Hardware_310_per_node
@@ -92,3 +100,14 @@ Attention if you install Airflow with pip you will have to find the base directo
 ### Scala 
 ### Java 
 ### R 
+
+## Resources 
+### Conferences
+[Open Data Science]
+[Flink Forward]
+[Kafka Summit]
+[Rec Systems]
+[Spark Summit]
+### Interesting Blogs
+### Courses
+### Books 
