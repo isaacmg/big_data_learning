@@ -1,16 +1,19 @@
 # Big Data Guide 
 ## Table of Contents  
 
-* [Introduction and History](#Introduction and a brief history)  
-   *[Origins of Bigdata](#The Origins of Big Data) 
-...snip...    
-<a name="headers"/>
+* [Introduction and History](#intro)  
+   * [Origins of Big Data](#orgins)
+   * [The Birth of Hadoop](#hadoopbirth)
 
-Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request. 
+
+Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request.
+<a name="intro"/>
 ## Introduction and a brief history
-![big_data](https://upload.wikimedia.org/wikipedia/commons/7/7c/Hilbert_InfoGrowth.png =100x100)
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hilbert_InfoGrowth.png" width=200px height=200px></img>
+<a name="orgins"/>
 ### The Origins of Big Data
 The term Big Data most likely originated sometime in the 1990s (you can see one of the earliest PDFs on the subject [here](http://static.usenix.org/event/usenix99/invited_talks/mashey.pdf)). The term emerged in response to the growing size of data sets and the need for non-traditional methods of processing them. 
+<a name="hadoopbirth"/>
 ### The Birth of Hadoop 
 Hadoop originates from the Google File System paper which was published in 2003 and 
 ## Principals 
