@@ -106,6 +106,7 @@ https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashb
 [Differences between job positions](https://bigdatauniversity.com/blog/data-scientist-vs-data-engineer/)
 ## Hardware
 ### GPUs and Big Data 
+[Overview]("http://www.nvidia.com/object/data-science-analytics-database.html")
 [GPUs and Big Data]("http://www.hpl.hp.com/techreports/2009/HPL-2009-38.pdf")
 ### Setting up a Hadoop Cluster
 [Setting up your own small Hadoop cluster] (http://www.oneillscrossing.com/home-built-hadoop-analytics-cluster/#Hardware_310_per_node)
@@ -121,11 +122,14 @@ Attention if you install Airflow with pip you will have to find the base directo
 
 ## Resources 
 ### Conferences
-[Open Data Science]
+[Open Data Science](http://opendatascience.com)
 [Flink Forward](http://flink-forward.org)
-[Kafka Summit]
-[Rec Systems]
-[Spark Summit]
+[Kafka Summit](https://kafka-summit.org)
+[Rec Systems](https://recsys.acm.org)
+[Spark Summit](https//spark-summit.org)
 ### Interesting Blogs
+[PaddleSoft](http://medium.com/@paddlesoft)
+[Netflix](http://http://techblog.netflix.com)
+[Uber](http://https://eng.uber.com)
 ### Courses
 ### Books 
