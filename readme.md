@@ -12,6 +12,15 @@ Hey everyone this is an informal repository where I discus Big Data technologies
   * [Spark](#spark)
   * [Flink](#flink)
 * [Hardware](#hardware)
+* [Business and Big Data](#business)
+  * [Job titles](#jobs)
+* [Resources](#resources)
+  * [Conferences](#conf) 
+  * [Blogs](#blogs) 
+  * [Books](#books)
+  * [Courses](#courses) 
+  
+* 
  
 
   
@@ -52,7 +61,7 @@ As the description states HDFS is bascially the distributed storage system of Ha
 #### YARN 
 Apache Yarn is Hadoop's job manager 
 
-### Basic elements of a data pipeline
+### The Data Pipeline 
 Various use cases will differ however, most big data pipelines will have similar common features. For the most part they will follow the following form:
 
 1. Data Collection
@@ -61,13 +70,14 @@ Various use cases will differ however, most big data pipelines will have similar
 3. (Not always but most of the time) storing data  
 4. Serving the data to the user
 
+### Lambda Architecture 
+
 ### Real World Architectures 
 In practice it is usually much more complicated than this. You are often extracting data from multiple sources and combining it into one, you have several machine learning models which you train offline and need deploy etc.
 
 [IBM Series on Big Data](http://www.ibm.com/developerworks/library/bd-archpatterns3/index.html?ca=drs-)
-#### Lambda Architecture 
 
-### Examples: 
+### Selected Examples: 
 **Reccomendation engine**:
 Simple example:
 
@@ -86,21 +96,23 @@ Real world examples:
 
 ◦ [Caserta Movie Reccomendations](http://www.slideshare.net/CasertaConcepts/analytics-week-recommendations-on-spark)
 
-◦ [Computering Reccomendations at scale with Flink](http://data-artisans.com/computing-recommendations-at-extreme-scale-with-apache-flink/)
+◦ [Reccomendations at scale with Flink](http://data-artisans.com/computing-recommendations-at-extreme-scale-with-apache-flink/)
 
 
 ** Monitoring ** 
+[Monitoring Traffic Data](https://www.mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-1)
 
-Hospital Example: 
-1.
-[Monitoring Traffic Data]("https://www.mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-1")
+ 
+
 <a name="cluster" />
-## Distributed Computing 
+## Distributed Computing
+<a name="MapReduce" />
 ### Clasic MapReduce
+<a name="spark" />
 ### Spark 
 #### PySpark 
 Find Spark is very useful for finding PySpark on your installation if you run in to problems. You can get it here https://github.com/minrk/findspark.
-
+<a name="flink" />
 ### Flink
 
 #### Installing Flink on Windows 
@@ -141,11 +153,15 @@ Neo4j is a graph database that can be used for either storage for analytical pur
 ## Data Visualization 
 http://www.slideshare.net/BenLaird/real-time-data-viz-with-spark-streaming-kafka-and-d3js
 https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashboard/
+<a name="business" />
+## Business and Big Data 
+<a name="jobs" />
+### Job Roles 
 
-## Diffrences between Data Science, Data Engineering, Business Intelligence, and Software Engineering 
 [The Rise of the Data Engineer on Medium](https://medium.freecodecamp.com/the-rise-of-the-data-engineer-91be18f1e603#.7v0hp99i0)
 
 [Differences between job positions](https://bigdatauniversity.com/blog/data-scientist-vs-data-engineer/)
+<a name="hardware"/>
 ## Hardware
 ### GPUs and Big Data 
 [Overview]("http://www.nvidia.com/object/data-science-analytics-database.html")
@@ -162,8 +178,21 @@ Attention if you install Airflow with pip you will have to find the base directo
 ### Java 
 ### R 
 
+## More Real World Examples 
+
+### Architectures/Backbones 
+
+### Reccomendations
+
+### Monitoring
+
+### Machine Learning 
+
+### Other
+<a name="resources"/>
 ## Resources 
 ### Conferences
+<a name="conf"/>
 [Open Data Science](http://opendatascience.com)
 
 [Flink Forward](http://flink-forward.org)
@@ -173,11 +202,25 @@ Attention if you install Airflow with pip you will have to find the base directo
 [Rec Systems](https://recsys.acm.org)
 
 [Spark Summit](https//spark-summit.org)
+<a name="blogs"/>
 ### Interesting Blogs
+
+The following are some interesting engineering blogs that often have posts regarding big data technologies.
+
 [PaddleSoft](http://medium.com/@paddlesoft)
+
+[Lyft](https://eng.lyft.com)
 
 [Netflix](http://http://techblog.netflix.com)
 
 [Uber](http://https://eng.uber.com)
-### Courses
+
+[Yelp](https://engineeringblog.yelp.com)
+
+[eHarmony](http://www.eharmony.com/engineering/)
+<a name="books"/>
 ### Books 
+<a name="courses"/>
+### Courses
+
+
