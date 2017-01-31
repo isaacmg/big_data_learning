@@ -11,6 +11,14 @@ Hey everyone this is an informal repository where I discus Big Data technologies
   * [MapReduce](#MapReduce)
   * [Spark](#spark)
   * [Flink](#flink)
+* [Databases](#databases)
+  * [Neo4j](#Neo4j)
+  * [MongoDB](#MongoDB)
+  * [Cassandra](#CassandraDB)
+  * [Redis](#Redis)
+  * [HBase](#HBase)
+  * [SQL](#SQL)
+  
 * [Hardware](#hardware)
 * [Business and Big Data](#business)
   * [Job titles](#jobs)
@@ -122,27 +130,46 @@ A lot of people have debated whether they should use Spark or Flink. Here are a 
 http://www.infoworld.com/article/2919602/hadoop/flink-hadoops-new-contender-for-mapreduce-spark.html
 http://stackoverflow.com/questions/28082581/what-is-the-difference-between-apache-spark-and-apache-flink
 http://www.slideshare.net/sbaltagi/flink-vs-spark
+<a name="databases"/>
 ## Databases 
 ### NoSQL
+<a name="Neo4j"/>
 #### Neo4j
-
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20140926224303/neo4j_logo-facebook.png" width=200 height=100></img>
 Neo4j is a graph database that can be used for either storage for analytical purposes or serving as the primary database for a website. As a graph database it is best suited for applications that have natural graph structures such as social networks or any other type of network. The database is composed of nodes and relationships between nodes. Neo4j has its own query language known as CQL or Cypher Query Language not to be confused with CQL Cassandra query language.
 
 **Relevant Links**
+[Neo4j official website](https://neo4j.com)
 
 [Building a simple reccomendation engine with Neo4j](https://medium.com/@paddlesoft/building-a-recommendation-engine-with-neo4j-part-1-simple-graph-based-approaches-16c3cea32ff#.f7243ljkt)
 
 [Integrating Neo4j with Spark Graph X](http://www.kennybastani.com/2014/11/using-apache-spark-and-neo4j-for-big.html)
 
-[Managing Genetic ancestry at scale with Neo4j and Kafka](http://stampedecon.com/big-data-conference-2015/sessions/managing-genetic-ancestry-at-scale-with-neo4j-and-kafka/) 
+[Managing genetic ancestry at scale with Neo4j and Kafka](http://stampedecon.com/big-data-conference-2015/sessions/managing-genetic-ancestry-at-scale-with-neo4j-and-kafka/) 
 
 ["PoptoJS a JS library to build a graph search with Neo4j](http://www.popotojs.com)
+<a name="MongoDB"/>
 #### MongoDB 
-#### CassandraDB
-#### Redis
-#### HBase
+<img src="http://cdn.rancher.com/wp-content/uploads/2016/01/26001728/mongodb-logo-300x208.png"> </img>
 
+** Relevant Links ** 
+
+[MongoDB offical website](https://www.mongodb.com)
+
+<a name="CassandraDB"/>
+#### CassandraDB
+<img src="http://blogs.vmware.com/vfabric/files/2012/10/cassandra.jpg"> </img>
+Cassandra is a large scale distibuted database built for web and mobile applications (in contrast to HBase). While Cassandra integrates well with Hadoop it has a reputation of being incredibly difficult to use. 
+
+<a name="Redis"/>
+#### Redis
+<img src="https://www.hostbridge.com/images/redis-300dpi.png" height = 100px width=250px></img>
+
+<a name="HBase"/>
+#### HBase
+<a name="SQL"/>
 ### SQL Databases
+Love them or hate them SQL databases are around to stay. Almost all organizations use them to store data in some capacity or another. Therefore it's very important to learn how to integrate them into our big data architectures. 
 
 ## Messaging/ Real time streaming data
 ### Flume 
