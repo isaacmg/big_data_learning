@@ -11,6 +11,8 @@ Hey everyone this is an informal repository where I discus Big Data technologies
   * [MapReduce](#MapReduce)
   * [Spark](#spark)
   * [Flink](#flink)
+* [Hardware](#hardware)
+ 
 
   
 
@@ -22,7 +24,7 @@ Hey everyone this is an informal repository where I discus Big Data technologies
 The term Big Data most likely originated sometime in the 1990s (you can see one of the earliest PDFs on the subject [here](http://static.usenix.org/event/usenix99/invited_talks/mashey.pdf)). The term emerged in response to the growing size of data sets and the need for non-traditional methods of processing them. 
 <a name="hadoopbirth"/>
 ### The Birth of Hadoop 
-Hadoop originates from the Google File System paper which was published in 2003 and the subsequent follow up paper "MapReduce: Simplified Data Processing on Large Clusters" published in December 2004. In 2006 a the Hadoop subproject was created on the Apache Foundations website. The project was named after Doug Cutting, an engineer at Yahoo, son's toy elephant.
+Hadoop originates from the Google File System paper which was published in 2003 and the subsequent follow up paper "MapReduce: Simplified Data Processing on Large Clusters" published in December 2004. In 2006 the Hadoop subproject was created on the Apache Foundation website. The project was named after Doug Cutting, an engineer at Yahoo, son's toy elephant.
 #### Further Links/References 
 [Hadoop on Wikipedia](https://en.wikipedia.org/wiki/Apache_Hadoop)
 
@@ -42,8 +44,13 @@ Almost all modern big data systems in some way involve some aspect of Hadoop (or
 MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR obsolete it is essential to understanding them as well. Map 
 <img src="https://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg"></img>
 #### HDFS 
+<img src="http://hadoop.apache.org/docs/r1.2.1/images/hdfsarchitecture.gif"> </img>
 "The Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware. It has many similarities with existing distributed file systems. However, the differences from other distributed file systems are significant. HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware. HDFS provides high throughput access to application data and is suitable for applications that have large data sets. HDFS relaxes a few POSIX requirements to enable streaming access to file system data. HDFS was originally built as infrastructure for the Apache Nutch web search engine project." - Apache Website Hadoop website
+
+As the description states HDFS is bascially the distributed storage system of Hadoop. Unlike MR HDFS is still fairly relevant as neither Flink nor Spark replace HDFS and many companies still use it either for temporary storage or as a permanent data lake configuration. 
+[See data lake](#datalake) 
 #### YARN 
+Apache Yarn is Hadoop's job manager 
 
 ### Basic elements of a data pipeline
 Various use cases will differ however, most big data pipelines will have similar common features. For the most part they will follow the following form:
@@ -89,8 +96,7 @@ Hospital Example:
 [Monitoring Traffic Data]("https://www.mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-1")
 <a name="cluster" />
 ## Distributed Computing 
-### Modern HDFS 
-### MapReduce
+### Clasic MapReduce
 ### Spark 
 #### PySpark 
 Find Spark is very useful for finding PySpark on your installation if you run in to problems. You can get it here https://github.com/minrk/findspark.
@@ -106,8 +112,26 @@ http://stackoverflow.com/questions/28082581/what-is-the-difference-between-apach
 http://www.slideshare.net/sbaltagi/flink-vs-spark
 ## Databases 
 ### NoSQL
-#### Graph Databases
-**Neo4j**
+#### Neo4j
+
+Neo4j is a graph database that can be used for either storage for analytical purposes or serving as the primary database for a website. As a graph database it is best suited for applications that have natural graph structures such as social networks or any other type of network. The database is composed of nodes and relationships between nodes. Neo4j has its own query language known as CQL or Cypher Query Language not to be confused with CQL Cassandra query language.
+
+**Relevant Links**
+
+[Building a simple reccomendation engine with Neo4j](https://medium.com/@paddlesoft/building-a-recommendation-engine-with-neo4j-part-1-simple-graph-based-approaches-16c3cea32ff#.f7243ljkt)
+
+[Integrating Neo4j with Spark Graph X](http://www.kennybastani.com/2014/11/using-apache-spark-and-neo4j-for-big.html)
+
+[Managing Genetic ancestry at scale with Neo4j and Kafka](http://stampedecon.com/big-data-conference-2015/sessions/managing-genetic-ancestry-at-scale-with-neo4j-and-kafka/) 
+
+["PoptoJS a JS library to build a graph search with Neo4j](http://www.popotojs.com)
+#### MongoDB 
+#### CassandraDB
+#### Redis
+#### HBase
+
+### SQL Databases
+
 ## Messaging/ Real time streaming data
 ### Flume 
 ### Kafka 
