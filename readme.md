@@ -36,7 +36,14 @@ Hadoop originates from the Google File System paper which was published in 2003 
 <a name="principals"/>
 ## Principals
 
-### MapReduce, YARN, HDFS and Hadoop
+### Hadoop
+Almost all modern big data systems in some way involve some aspect of Hadoop (or improvement of Hadoop). As such it seems most fitting to begin our discussion of big data here. The basic idea of Hadoop is to break large datasets up into small pieces and distribute them over large multi-node clusters for processing that runs concurrently. 
+#### MapReduce
+MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR obsolete it is essential to understanding them as well. Map 
+<img src="https://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg"></img>
+#### HDFS 
+"The Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware. It has many similarities with existing distributed file systems. However, the differences from other distributed file systems are significant. HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware. HDFS provides high throughput access to application data and is suitable for applications that have large data sets. HDFS relaxes a few POSIX requirements to enable streaming access to file system data. HDFS was originally built as infrastructure for the Apache Nutch web search engine project." - Apache Website Hadoop website
+#### YARN 
 
 ### Basic elements of a data pipeline
 Various use cases will differ however, most big data pipelines will have similar common features. For the most part they will follow the following form:
