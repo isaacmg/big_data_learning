@@ -1,4 +1,5 @@
 # Big Data Guide 
+Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request.
 ## Table of Contents  
 
 * [Introduction and History](#intro)  
@@ -12,7 +13,7 @@
   * [Flink](#flink)
 
   
-Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request.
+
 <a name="intro"/>
 ## Introduction and a brief history
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hilbert_InfoGrowth.png" width=200px height=200px></img>
@@ -21,7 +22,17 @@ Hey everyone this is an informal repository where I discus Big Data technologies
 The term Big Data most likely originated sometime in the 1990s (you can see one of the earliest PDFs on the subject [here](http://static.usenix.org/event/usenix99/invited_talks/mashey.pdf)). The term emerged in response to the growing size of data sets and the need for non-traditional methods of processing them. 
 <a name="hadoopbirth"/>
 ### The Birth of Hadoop 
-Hadoop originates from the Google File System paper which was published in 2003 and 
+Hadoop originates from the Google File System paper which was published in 2003 and the subsequent follow up paper "MapReduce: Simplified Data Processing on Large Clusters" published in December 2004. In 2006 a the Hadoop subproject was created on the Apache Foundations website. The project was named after Doug Cutting, an engineer at Yahoo, son's toy elephant.
+#### Further Links/References 
+[Hadoop on Wikipedia](https://en.wikipedia.org/wiki/Apache_Hadoop)
+
+[History of Hadoop](https://medium.com/@markobonaci/the-history-of-hadoop-68984a11704#.69ryjh27u)
+
+[Archived mailing list request for Hadoop](https://issues.apache.org/jira/browse/INFRA-700) 
+
+[CNBC Article on Hadoop's name](http://www.cnbc.com/id/100769719) 
+
+
 <a name="principals"/>
 ## Principals
 
@@ -123,13 +134,19 @@ Attention if you install Airflow with pip you will have to find the base directo
 ## Resources 
 ### Conferences
 [Open Data Science](http://opendatascience.com)
+
 [Flink Forward](http://flink-forward.org)
+
 [Kafka Summit](https://kafka-summit.org)
+
 [Rec Systems](https://recsys.acm.org)
+
 [Spark Summit](https//spark-summit.org)
 ### Interesting Blogs
 [PaddleSoft](http://medium.com/@paddlesoft)
+
 [Netflix](http://http://techblog.netflix.com)
+
 [Uber](http://https://eng.uber.com)
 ### Courses
 ### Books 
