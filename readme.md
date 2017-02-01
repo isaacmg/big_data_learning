@@ -61,7 +61,7 @@ Almost all modern big data systems in some way involve some aspect of Hadoop (or
 MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR obsolete it is essential to understanding them as well. Map 
 <img src="https://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg"></img>
 #### HDFS 
-<img src="http://hadoop.apache.org/docs/r1.2.1/images/hdfsarchitecture.gif"> </img>
+<img src="http://hadoop.apache.org/docs/r1.2.1/images/hdfsarchitecture.gif" height=300px width=350px> </img>
 "The Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware. It has many similarities with existing distributed file systems. However, the differences from other distributed file systems are significant. HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware. HDFS provides high throughput access to application data and is suitable for applications that have large data sets. HDFS relaxes a few POSIX requirements to enable streaming access to file system data. HDFS was originally built as infrastructure for the Apache Nutch web search engine project." - Apache Website Hadoop website
 
 As the description states HDFS is bascially the distributed storage system of Hadoop. Unlike MR HDFS is still fairly relevant as neither Flink nor Spark replace HDFS and many companies still use it either for temporary storage or as a permanent data lake configuration. 
@@ -79,6 +79,7 @@ Various use cases will differ however, most big data pipelines will have similar
 4. Serving the data to the user
 
 ### Lambda Architecture 
+Lambda Architecture is basically having a batch layer for your
 
 ### Real World Architectures 
 In practice it is usually much more complicated than this. You are often extracting data from multiple sources and combining it into one, you have several machine learning models which you train offline and need deploy etc.
@@ -117,7 +118,16 @@ Real world examples:
 <a name="MapReduce" />
 ### Clasic MapReduce
 <a name="spark" />
-### Spark 
+### Spark
+#### Overview
+Spark is a newer cluster computing platform orginally started in 2009 and later added as an Apache Open Source Project in 2013. Spark was built specifically as attempt to provide flexibility in contrast rigid structure of the MapReduce framework. Spark relies on Resilent Distrbuted Datasets (RDDs) as it main data structure. According to the offical Spark website "RDDs are fault-tolerant, parallel data structures that let users explicitly persist intermediate results in memory, control their partitioning to optimize data placement, and manipulate them using a rich set of operators." The RDD data structure provides significant speed advantages over MR in Hadoop due to its configuration. The following images show a breakdown of MR in Hadoop vs Spark.  
+<img src="https://qph.ec.quoracdn.net/main-qimg-4a2fb1f64b97e01aa5bc00fb34f8debc?convert_to_webp=true"> </img>
+<img src="https://qph.ec.quoracdn.net/main-qimg-29fa2b2a4b601723f0e23490be296405?convert_to_webp=true"></img>
+#### SQL and Dataframes 
+#### MLLIB 
+#### Streaming 
+#### GraphX
+
 #### PySpark 
 Find Spark is very useful for finding PySpark on your installation if you run in to problems. You can get it here https://github.com/minrk/findspark.
 <a name="flink" />
