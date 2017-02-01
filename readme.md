@@ -121,9 +121,11 @@ Real world examples:
 ### Spark
 #### Overview
 Spark is a newer cluster computing platform orginally started in 2009 and later added as an Apache Open Source Project in 2013. Spark was built specifically as attempt to provide flexibility in contrast rigid structure of the MapReduce framework. Spark relies on Resilent Distrbuted Datasets (RDDs) as it main data structure. According to the offical Spark website "RDDs are fault-tolerant, parallel data structures that let users explicitly persist intermediate results in memory, control their partitioning to optimize data placement, and manipulate them using a rich set of operators." The RDD data structure provides significant speed advantages over MR in Hadoop due to its configuration. The following images show a breakdown of MR in Hadoop vs Spark.  
-<img src="https://qph.ec.quoracdn.net/main-qimg-4a2fb1f64b97e01aa5bc00fb34f8debc?convert_to_webp=true"> </img>
-<img src="https://qph.ec.quoracdn.net/main-qimg-29fa2b2a4b601723f0e23490be296405?convert_to_webp=true"></img>
+<img src="https://qph.ec.quoracdn.net/main-qimg-4a2fb1f64b97e01aa5bc00fb34f8debc?convert_to_webp=true" height=300px width=300px> </img>
+<img src="https://qph.ec.quoracdn.net/main-qimg-29fa2b2a4b601723f0e23490be296405?convert_to_webp=true" height=300px width=300px></img>
 #### SQL and Dataframes 
+"Spark SQL is a Spark module for structured data processing. Unlike the basic Spark RDD API, the interfaces provided by Spark SQL provide Spark with more information about the structure of both the data and the computation being performed. Internally, Spark SQL uses this extra information to perform extra optimizations. There are several ways to interact with Spark SQL including SQL and the Dataset API. When computing a result the same execution engine is used, independent of which API/language you are using to express the computation. This unification means that developers can easily switch back and forth between different APIs based on which provides the most natural way to express a given transformation."
+
 #### MLLIB 
 #### Streaming 
 #### GraphX
@@ -177,6 +179,12 @@ Cassandra is a large scale distibuted database built for web and mobile applicat
 
 <a name="HBase"/>
 #### HBase
+<img src="https://www.mapr.com/sites/default/files/apache-hbase-image.png"></img>
+HBase is a column oriented DB that run on top of HDFS. In contrast to Cassandra HBase it is mainly made for analytical purposes and is not a full production database system. It often comes in many Hadoop distributions as default. 
+
+** Relevant Sites ** 
+[Official Site](https://hbase.apache.org)
+[IBM Article on HBase](https://www-01.ibm.com/software/data/infosphere/hadoop/hbase/) 
 <a name="SQL"/>
 ### SQL Databases
 Love them or hate them SQL databases are around to stay. Almost all organizations use them to store data in some capacity or another. Therefore it's very important to learn how to integrate them into our big data architectures. 
@@ -184,6 +192,16 @@ Love them or hate them SQL databases are around to stay. Almost all organization
 ## Messaging/ Real time streaming data
 ### Flume 
 ### Kafka 
+## Workflow Software 
+### Nifi 
+### Airflow 
+Attention if you install Airflow with pip you will have to find the base directory pip installed it to. In my case it was \usr\local\lib\python2.7\dist-packages\airflow
+<a name="lang" />
+## Languages 
+### Python 
+### Scala 
+### Java 
+### R 
 
 ## Creating, training, deploying, and managing, machine learning models 
 
@@ -192,12 +210,12 @@ http://www.slideshare.net/BenLaird/real-time-data-viz-with-spark-streaming-kafka
 https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashboard/
 <a name="business" />
 ## Business and Big Data 
+<img src="http://mattturck.com/wp-content/uploads/2016/03/Big-Data-Landscape-2016-v18-FINAL.png"></img>
 <a name="jobs" />
 ### Job Roles 
-
 [The Rise of the Data Engineer on Medium](https://medium.freecodecamp.com/the-rise-of-the-data-engineer-91be18f1e603#.7v0hp99i0)
-
 [Differences between job positions](https://bigdatauniversity.com/blog/data-scientist-vs-data-engineer/)
+
 <a name="hardware"/>
 ## Hardware
 ### GPUs and Big Data 
@@ -205,15 +223,7 @@ https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashb
 [GPUs and Big Data]("http://www.hpl.hp.com/techreports/2009/HPL-2009-38.pdf")
 ### Setting up a Hadoop Cluster
 [Setting up your own small Hadoop cluster] (http://www.oneillscrossing.com/home-built-hadoop-analytics-cluster/#Hardware_310_per_node)
-## Workflow Software 
-### Nifi 
-### Airflow 
-Attention if you install Airflow with pip you will have to find the base directory pip installed it to. In my case it was \usr\local\lib\python2.7\dist-packages\airflow
-## Languages 
-### Python 
-### Scala 
-### Java 
-### R 
+
 
 ## More Real World Examples 
 
