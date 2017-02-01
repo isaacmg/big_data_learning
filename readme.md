@@ -87,6 +87,7 @@ In practice it is usually much more complicated than this. You are often extract
 [IBM Series on Big Data](http://www.ibm.com/developerworks/library/bd-archpatterns3/index.html?ca=drs-)
 
 ### Selected Examples: 
+<img src="http://2.bp.blogspot.com/-S0Vi81DUQRI/UVOROqs4JGI/AAAAAAAAAZg/Io2MRCNUfgs/s1600/MachineLearningArchitecture-v3.png"></img>
 **Reccomendation engine**:
 Simple example:
 
@@ -120,7 +121,7 @@ Real world examples:
 <a name="spark" />
 ### Spark
 #### Overview
-Spark is a newer cluster computing platform orginally started in 2009 and later added as an Apache Open Source Project in 2013. Spark was built specifically as attempt to provide flexibility in contrast rigid structure of the MapReduce framework. Spark relies on Resilent Distrbuted Datasets (RDDs) as it main data structure. According to the offical Spark website "RDDs are fault-tolerant, parallel data structures that let users explicitly persist intermediate results in memory, control their partitioning to optimize data placement, and manipulate them using a rich set of operators." The RDD data structure provides significant speed advantages over MR in Hadoop due to its configuration. The following images show a breakdown of MR in Hadoop vs Spark.  
+Spark is a newer cluster computing platform orginally started in 2009 and later added as an Apache Open Source Project in 2013. Spark was built specifically as an attempt to provide flexibility in contrast to the rigid structure of the MapReduce framework. Spark relies on Resilent Distrbuted Datasets (RDDs) as it main data structure. According to the offical Spark website "RDDs are fault-tolerant, parallel data structures that let users explicitly persist intermediate results in memory, control their partitioning to optimize data placement, and manipulate them using a rich set of operators." The RDD data structure provides significant speed advantages over MR in Hadoop due to its configuration. The following images show a breakdown of MR in Hadoop vs Spark.  
 <img src="https://qph.ec.quoracdn.net/main-qimg-4a2fb1f64b97e01aa5bc00fb34f8debc?convert_to_webp=true" height=300px width=300px> </img>
 <img src="https://qph.ec.quoracdn.net/main-qimg-29fa2b2a4b601723f0e23490be296405?convert_to_webp=true" height=300px width=300px></img>
 #### SQL and Dataframes 
@@ -206,8 +207,10 @@ Attention if you install Airflow with pip you will have to find the base directo
 ## Creating, training, deploying, and managing, machine learning models 
 
 ## Data Visualization 
-http://www.slideshare.net/BenLaird/real-time-data-viz-with-spark-streaming-kafka-and-d3js
-https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashboard/
+[Realtime time visualization with D3JS and Kafka](http://www.slideshare.net/BenLaird/real-time-data-viz-with-spark-streaming-kafka-and-d3js)
+
+[Using Kafka and HBase to power a realtime analytics dashboard](https://www.sigmoid.com/integrating-spark-kafka-hbase-to-power-a-real-time-dashboard/)
+
 <a name="business" />
 ## Business and Big Data 
 <img src="http://mattturck.com/wp-content/uploads/2016/03/Big-Data-Landscape-2016-v18-FINAL.png"></img>
