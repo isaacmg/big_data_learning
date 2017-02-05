@@ -1,5 +1,9 @@
 # Big Data Guide 
-Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request.
+Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request. 
+
+**Disclaimer** 
+
+This is an informal repository created in my free time. Although I try to as accurate as possible I'm not perfect. As such it is highly reccomended that you check official documentation before attempting anything. Neither myself nor any contributors can be held responsible for incorrect or wrong information.
 ## Table of Contents  
 
 * [Introduction and History](#intro)  
@@ -58,7 +62,7 @@ Hadoop originates from the Google File System paper which was published in 2003 
 ### Hadoop
 Almost all modern big data systems in some way involve some aspect of Hadoop (or improvement of Hadoop). As such it seems most fitting to begin our discussion of big data here. The basic idea of Hadoop is to break large datasets up into small pieces and distribute them over large multi-node clusters for processing that runs concurrently. 
 #### MapReduce
-MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR obsolete it is essential to understanding them as well. Map 
+MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR obsolete it is essential to understanding them as well. Here is a basic diagram detailing the MapReduce process:
 <img src="https://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg"></img>
 #### HDFS 
 <img src="http://hadoop.apache.org/docs/r1.2.1/images/hdfsarchitecture.gif" height=300px width=350px> </img>
@@ -135,14 +139,17 @@ Spark is a newer cluster computing platform orginally started in 2009 and later 
 Find Spark is very useful for finding PySpark on your installation if you run in to problems. You can get it here https://github.com/minrk/findspark.
 <a name="flink" />
 ### Flink
-
-#### Installing Flink on Windows 
-See https://ci.apache.org/projects/flink/flink-docs-release-0.8/local_setup.html first. 
 #### Flink vs Spark
 A lot of people have debated whether they should use Spark or Flink. Here are a few articles and slideshows that discus the differences:
-http://www.infoworld.com/article/2919602/hadoop/flink-hadoops-new-contender-for-mapreduce-spark.html
-http://stackoverflow.com/questions/28082581/what-is-the-difference-between-apache-spark-and-apache-flink
-http://www.slideshare.net/sbaltagi/flink-vs-spark
+[Infoworld Flink vs Spark](http://www.infoworld.com/article/2919602/hadoop/flink-hadoops-new-contender-for-mapreduce-spark.html)
+
+[Stack Overflow answer](http://stackoverflow.com/questions/28082581/what-is-the-difference-between-apache-spark-and-apache-flink)
+
+[Capital One slideshow on the topic](http://www.slideshare.net/sbaltagi/flink-vs-spark)
+
+#### Installing Flink 
+[How to install Flink on Windows ](https://ci.apache.org/projects/flink/flink-docs-release-0.8/local_setup.html)  
+
 <a name="databases"/>
 ## Databases 
 ### NoSQL
@@ -190,7 +197,7 @@ HBase is a column oriented DB that run on top of HDFS. In contrast to Cassandra 
 ### SQL Databases
 Love them or hate them SQL databases are around to stay. Almost all organizations use them to store data in some capacity or another. Therefore it's very important to learn how to integrate them into our big data architectures. 
 
-## Messaging/ Real time streaming data
+## Messaging/Real time streaming data
 ### Flume 
 ### Kafka 
 ## Workflow Software 
@@ -205,6 +212,16 @@ Attention if you install Airflow with pip you will have to find the base directo
 ### R 
 
 ## Creating, training, deploying, and managing, machine learning models 
+As there are already many excellent repositories dedicated to ML algorithms. Here I will be discussing how ML models are integrated into  big data architecture.
+### Getting training data
+For purposes of training/analysis you are usually going to have a secondary pipeline seperate from your production/client serving pipeline. This will be the pipeline that data scientists and business intelligence people utilize for getting data either for training or analysis. 
+<img src="http://radar.oreilly.com/wp-files/2/2015/09/Back-end-and-production.jpg"></img>
+
+### Deploying to production
+
+### Monitoring performance 
+
+### PipelineIO
 
 ## Data Visualization 
 [Realtime time visualization with D3JS and Kafka](http://www.slideshare.net/BenLaird/real-time-data-viz-with-spark-streaming-kafka-and-d3js)
