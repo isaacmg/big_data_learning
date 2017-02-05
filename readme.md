@@ -66,6 +66,7 @@ MapReduce is the processing part of Hadoop. Although newer systems like Spark an
 <img src="https://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg"></img>
 #### HDFS 
 <img src="http://hadoop.apache.org/docs/r1.2.1/images/hdfsarchitecture.gif" height=300px width=350px> </img>
+
 "The Hadoop Distributed File System (HDFS) is a distributed file system designed to run on commodity hardware. It has many similarities with existing distributed file systems. However, the differences from other distributed file systems are significant. HDFS is highly fault-tolerant and is designed to be deployed on low-cost hardware. HDFS provides high throughput access to application data and is suitable for applications that have large data sets. HDFS relaxes a few POSIX requirements to enable streaming access to file system data. HDFS was originally built as infrastructure for the Apache Nutch web search engine project." - Apache Website Hadoop website
 
 As the description states HDFS is bascially the distributed storage system of Hadoop. Unlike MR HDFS is still fairly relevant as neither Flink nor Spark replace HDFS and many companies still use it either for temporary storage or as a permanent data lake configuration. 
@@ -113,7 +114,8 @@ Real world examples:
 ◦ [Reccomendations at scale with Flink](http://data-artisans.com/computing-recommendations-at-extreme-scale-with-apache-flink/)
 
 
-** Monitoring ** 
+**Monitoring** 
+
 [Monitoring Traffic Data](https://www.mapr.com/blog/monitoring-real-time-uber-data-using-spark-machine-learning-streaming-and-kafka-api-part-1)
 
  
@@ -140,7 +142,9 @@ Find Spark is very useful for finding PySpark on your installation if you run in
 <a name="flink" />
 ### Flink
 #### Flink vs Spark
+
 A lot of people have debated whether they should use Spark or Flink. Here are a few articles and slideshows that discus the differences:
+
 [Infoworld Flink vs Spark](http://www.infoworld.com/article/2919602/hadoop/flink-hadoops-new-contender-for-mapreduce-spark.html)
 
 [Stack Overflow answer](http://stackoverflow.com/questions/28082581/what-is-the-difference-between-apache-spark-and-apache-flink)
@@ -148,6 +152,7 @@ A lot of people have debated whether they should use Spark or Flink. Here are a 
 [Capital One slideshow on the topic](http://www.slideshare.net/sbaltagi/flink-vs-spark)
 
 #### Installing Flink 
+
 [How to install Flink on Windows ](https://ci.apache.org/projects/flink/flink-docs-release-0.8/local_setup.html)  
 
 <a name="databases"/>
@@ -156,6 +161,7 @@ A lot of people have debated whether they should use Spark or Flink. Here are a 
 <a name="Neo4j"/>
 #### Neo4j
 <img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20140926224303/neo4j_logo-facebook.png" width=200 height=100></img>
+
 Neo4j is a graph database that can be used for either storage for analytical purposes or serving as the primary database for a website. As a graph database it is best suited for applications that have natural graph structures such as social networks or any other type of network. The database is composed of nodes and relationships between nodes. Neo4j has its own query language known as CQL or Cypher Query Language not to be confused with CQL Cassandra query language.
 
 **Relevant Links**
@@ -179,6 +185,7 @@ Neo4j is a graph database that can be used for either storage for analytical pur
 <a name="CassandraDB"/>
 #### CassandraDB
 <img src="http://blogs.vmware.com/vfabric/files/2012/10/cassandra.jpg"> </img>
+
 Cassandra is a large scale distibuted database built for web and mobile applications (in contrast to HBase). While Cassandra integrates well with Hadoop it has a reputation of being incredibly difficult to use. 
 
 <a name="Redis"/>
@@ -188,6 +195,7 @@ Cassandra is a large scale distibuted database built for web and mobile applicat
 <a name="HBase"/>
 #### HBase
 <img src="https://www.mapr.com/sites/default/files/apache-hbase-image.png"></img>
+
 HBase is a column oriented DB that run on top of HDFS. In contrast to Cassandra HBase it is mainly made for analytical purposes and is not a full production database system. It often comes in many Hadoop distributions as default. 
 
 ** Relevant Sites ** 
