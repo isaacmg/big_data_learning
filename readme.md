@@ -1,5 +1,5 @@
 # Big Data Guide 
-Hey everyone this is an informal repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request. 
+Hey everyone this is a repository where I discus Big Data technologies. It originally a rose out of my notes that I took while learning about various things. For the most part I will be focusing on Open Source Technologies and Big Data Systems design although I will briefly describe some other things. If you see anything incorrect or anything that should be added feel free to fork and make a pull request. 
 
 **Disclaimer** 
 
@@ -60,9 +60,9 @@ Hadoop originates from the Google File System paper which was published in 2003 
 ## Principals
 
 ### Hadoop
-Almost all modern big data systems in some way involve some aspect of Hadoop (or improvement of Hadoop). As such it seems most fitting to begin our discussion of big data here. The basic idea of Hadoop is to break large datasets up into small pieces and distribute them over large multi-node clusters for processing that runs concurrently. 
+Almost all modern big data systems in some way involve some aspect of Hadoop (or improvement of Hadoop). As such it seems most fitting to begin our discussion of big data here. The basic idea of Hadoop is to break large datasets up into small pieces and distribute them over large multi-node clusters for processing that runs concurrently. A very good repository that explains Hadoop in great detail is [Hadoop Internals](http://ercoppa.github.io/HadoopInternals/). However, I will attempt to go over its core parts.
 #### MapReduce
-MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR obsolete it is essential to understanding them as well. Here is a basic diagram detailing the MapReduce process:
+MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR itself obsolete, it is essential to understanding how they work as well. Here is a basic diagram detailing the MapReduce process:
 <img src="https://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg"></img>
 #### HDFS 
 <img src="http://hadoop.apache.org/docs/r1.2.1/images/hdfsarchitecture.gif" height=300px width=350px> </img>
@@ -72,7 +72,7 @@ MapReduce is the processing part of Hadoop. Although newer systems like Spark an
 As the description states HDFS is bascially the distributed storage system of Hadoop. Unlike MR HDFS is still fairly relevant as neither Flink nor Spark replace HDFS and many companies still use it either for temporary storage or as a permanent data lake configuration. 
 [See data lake](#datalake) 
 #### YARN 
-Apache Yarn is Hadoop's job manager 
+Apache Yarn is Hadoop's job manager.
 
 ### The Data Pipeline 
 Various use cases will differ however, most big data pipelines will have similar common features. For the most part they will follow the following form:
@@ -84,10 +84,17 @@ Various use cases will differ however, most big data pipelines will have similar
 4. Serving the data to the user
 
 ### Lambda Architecture 
-Lambda Architecture is basically having a batch layer for your
+
+<img src="http://lambda-architecture.net/img/la-overview_small.png"> </img>
+
+Lambda Architecture is having both a batch processing layer for your data and a realtime layer for your data. The realtime layer sacrifices accuracy for the sake of speed while the batch layer is perfectly accurate but slow. Periodically the batch layer updates the realtime layer. The goal of this model is to preserve overall data accurcay without scarificing speed.
+
+For more on Lambda Architecture see [Lambada Architecture](http://lambda-architecture.net)
+
+
 
 ### Real World Architectures 
-In practice it is usually much more complicated than this. You are often extracting data from multiple sources and combining it into one, you have several machine learning models which you train offline and need deploy etc.
+In practice it is usually much more complicated than this. You are often extracting data from multiple sources and combining it into one, you have several machine learning models which you train offline and need deploy etc. 
 
 [IBM Series on Big Data](http://www.ibm.com/developerworks/library/bd-archpatterns3/index.html?ca=drs-)
 
@@ -130,6 +137,9 @@ Real world examples:
 Spark is a newer cluster computing platform orginally started in 2009 and later added as an Apache Open Source Project in 2013. Spark was built specifically as an attempt to provide flexibility in contrast to the rigid structure of the MapReduce framework. Spark relies on Resilent Distrbuted Datasets (RDDs) as it main data structure. According to the offical Spark website "RDDs are fault-tolerant, parallel data structures that let users explicitly persist intermediate results in memory, control their partitioning to optimize data placement, and manipulate them using a rich set of operators." The RDD data structure provides significant speed advantages over MR in Hadoop due to its configuration. The following images show a breakdown of MR in Hadoop vs Spark.  
 <img src="https://qph.ec.quoracdn.net/main-qimg-4a2fb1f64b97e01aa5bc00fb34f8debc?convert_to_webp=true" height=300px width=300px> </img>
 <img src="https://qph.ec.quoracdn.net/main-qimg-29fa2b2a4b601723f0e23490be296405?convert_to_webp=true" height=300px width=300px></img>
+
+[YouTube video describing differences of Spark vs Hadoop](https://www.youtube.com/watch?v=KzFe4T0PwQ8)
+
 #### SQL and Dataframes 
 "Spark SQL is a Spark module for structured data processing. Unlike the basic Spark RDD API, the interfaces provided by Spark SQL provide Spark with more information about the structure of both the data and the computation being performed. Internally, Spark SQL uses this extra information to perform extra optimizations. There are several ways to interact with Spark SQL including SQL and the Dataset API. When computing a result the same execution engine is used, independent of which API/language you are using to express the computation. This unification means that developers can easily switch back and forth between different APIs based on which provides the most natural way to express a given transformation."
 
