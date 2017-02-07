@@ -191,8 +191,11 @@ Cassandra is a large scale distibuted database built for web and mobile applicat
 **Relevant Link**
 
 [Official site](http://cassandra.apache.org)
+
 [Netflix Cassandra Pipeline](http://techblog.netflix.com/2012/02/aegisthus-bulk-data-pipeline-out-of.html)
+
 [Cassandra Summit Netflix and Reccomendations + others in playlist](https://www.youtube.com/watch?v=SxU0CJJ2nVE&list=PLm-EPIkBI3YoiA-02vufoEj4CgYvIQgIk&index=3)
+
 [Getting started with Cassandr](https://www.codementor.io/sheena/installing-cassandra-spark-linux-debian-ubuntu-14-du107vbhx)
 
 <a name="Redis"/>
