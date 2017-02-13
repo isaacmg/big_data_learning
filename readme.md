@@ -206,11 +206,18 @@ Cassandra is a large scale distibuted database built for web and mobile applicat
 
 [Cassandra Summit Netflix and Reccomendations + others in playlist](https://www.youtube.com/watch?v=SxU0CJJ2nVE&list=PLm-EPIkBI3YoiA-02vufoEj4CgYvIQgIk&index=3)
 
-[Getting started with Cassandr](https://www.codementor.io/sheena/installing-cassandra-spark-linux-debian-ubuntu-14-du107vbhx)
+[Getting started with Cassandra](https://www.codementor.io/sheena/installing-cassandra-spark-linux-debian-ubuntu-14-du107vbhx)
 
 <a name="Redis"/>
 #### Redis
 <img src="https://www.hostbridge.com/images/redis-300dpi.png" height = 100px width=250px></img>
+
+[Official Site](https://redis.io)
+
+[Scaling Redis cluster for Genome Analysis](https://www.youtube.com/watch?v=g69-3He_IYs)
+
+[When and Why you should use Redis](https://www.youtube.com/watch?v=CoQcNgfPYPc)
+
 
 <a name="HBase"/>
 #### HBase
