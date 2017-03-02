@@ -184,6 +184,9 @@ Neo4j is a graph database that can be used for either storage for analytical pur
 [Managing genetic ancestry at scale with Neo4j and Kafka](http://stampedecon.com/big-data-conference-2015/sessions/managing-genetic-ancestry-at-scale-with-neo4j-and-kafka/) 
 
 ["PoptoJS a JS library to build a graph search with Neo4j](http://www.popotojs.com)
+
+[Neo4j Kafka](https://www.linkedin.com/pulse/neo4j-real-time-graph-analytics-update-1m-nodes-90-moore-ph-d-)
+
 <a name="MongoDB"/>
 #### MongoDB 
 <img src="http://cdn.rancher.com/wp-content/uploads/2016/01/26001728/mongodb-logo-300x208.png"> </img>
@@ -238,6 +241,7 @@ Love them or hate them SQL databases are around to stay. Almost all organization
 ## Workflow Software 
 ### Nifi 
 ### Airflow 
+
 Attention if you install Airflow with pip you will have to find the base directory pip installed it to. In my case it was \usr\local\lib\python2.7\dist-packages\airflow
 <a name="lang" />
 ## Languages 
@@ -268,8 +272,12 @@ For purposes of training/analysis you are usually going to have a secondary pipe
 <img src="http://mattturck.com/wp-content/uploads/2016/03/Big-Data-Landscape-2016-v18-FINAL.png"></img>
 <a name="jobs" />
 ### Job Roles 
-[The Rise of the Data Engineer on Medium](https://medium.freecodecamp.com/the-rise-of-the-data-engineer-91be18f1e603#.7v0hp99i0)
+[The Rise of the Data Engineer on Medium](https://medium.freecodecamp.com/the-rise-of-the-data-engineer-91be18f1e603#.7v0hp99i0)+
+
 [Differences between job positions](https://bigdatauniversity.com/blog/data-scientist-vs-data-engineer/)
+
+[Data Analyst vs Scientist](https://www.import.io/post/data-scientists-vs-data-analysts-why-the-distinction-matters/)
+
 
 <a name="hardware"/>
 ## Hardware
