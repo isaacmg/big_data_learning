@@ -212,7 +212,9 @@ Cassandra is a large scale distibuted database built for web and mobile applicat
 [Getting started with Cassandra](https://www.codementor.io/sheena/installing-cassandra-spark-linux-debian-ubuntu-14-du107vbhx)
 
 <a name="Redis"/>
+
 #### Redis
+
 <img src="https://www.hostbridge.com/images/redis-300dpi.png" height = 100px width=250px></img>
 
 [Official Site](https://redis.io)
