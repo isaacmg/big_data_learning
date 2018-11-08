@@ -39,13 +39,19 @@ This is an informal repository created in my free time. Although I try to as acc
 
 <a name="intro"/>
 ## Introduction and a brief history
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hilbert_InfoGrowth.png" width=200px height=200px></img>
 <a name="orgins"/>
+
 ### The Origins of Big Data
+
 The term Big Data most likely originated sometime in the 1990s (you can see one of the earliest PDFs on the subject [here](http://static.usenix.org/event/usenix99/invited_talks/mashey.pdf)). The term emerged in response to the growing size of data sets and the need for non-traditional methods of processing them. 
 <a name="hadoopbirth"/>
+
 ### The Birth of Hadoop 
+
 Hadoop originates from the Google File System paper which was published in 2003 and the subsequent follow up paper "MapReduce: Simplified Data Processing on Large Clusters" published in December 2004. In 2006 the Hadoop subproject was created on the Apache Foundation website. The project was named after Doug Cutting, an engineer at Yahoo, son's toy elephant.
+
 #### Further Links/References 
 [Hadoop on Wikipedia](https://en.wikipedia.org/wiki/Apache_Hadoop)
 
@@ -61,9 +67,11 @@ Hadoop originates from the Google File System paper which was published in 2003 
 
 ### Hadoop
 Almost all modern big data systems in some way involve some aspect of Hadoop (or improvement of Hadoop). As such it seems most fitting to begin our discussion of big data here. The basic idea of Hadoop is to break large datasets up into small pieces and distribute them over large multi-node clusters for processing that runs concurrently. A very good repository that explains Hadoop in great detail is [Hadoop Internals](http://ercoppa.github.io/HadoopInternals/). However, I will attempt to go over its core parts.
+
 #### MapReduce
 MapReduce is the processing part of Hadoop. Although newer systems like Spark and Flink have (for the most part) made MR itself obsolete, it is essential to understanding how they work as well. Here is a basic diagram detailing the MapReduce process:
 <img src="https://www.tutorialspoint.com/map_reduce/images/mapreduce_work.jpg"></img>
+
 #### HDFS 
 <img src="http://hadoop.apache.org/docs/r1.2.1/images/hdfsarchitecture.gif" height=300px width=350px> </img>
 
